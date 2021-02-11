@@ -1,65 +1,40 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import style from '../styles/index.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="flex flex-col min-h-screen pt-10">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className="container mx-auto flex-grow">
+        <div className="grid lg:grid-cols-6 grid-cols-1 gap-y-3">
+          <div className="lg:col-span-3 col-auto flex self-start lg:self-end justify-center lg:justify-end pt-8 lg:pt-0">
+            <h1 className="lg:text-6xl text-3xl font-bold">Patiphol Pussawong</h1>
+          </div>
+          <div className="lg:col-span-3 col-auto order-first justify-center self-center lg:order-none row-span-1 lg:row-span-2 lg:ml-12">
+            <img className={style.profileImg} src="/profile.jpg" />
+          </div>
+          <div className="lg:col-start-2 lg:col-span-2 col-auto flex self-start justify-center lg:justify-end">
+            <p>4th year Software Engineering student in ICT Faculty, Mahidol University. I'm keen to learn all about web development including both frontend and backend.</p>
+          </div>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer className="container mx-auto">
+        <div className="grid text-xs">
+          <div className="flex justify-center">
+            <p>This web is part of my Learning at React with Next.JS and Tailwind CSS</p>
+          </div>
+          <div className="flex justify-center">
+            <p>Made with ❤️ by <a className={style.footerLink} href="https://github.com/VectorXz">@VectorXz</a></p>
+          </div>
+        </div>
       </footer>
+
+
     </div>
   )
 }

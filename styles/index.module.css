@@ -1,0 +1,8 @@
+.profileImg {
+    @apply rounded-full object-fill;
+    max-height: 400px;
+}
+
+.footerLink {
+    @apply text-blue-400;
+}
