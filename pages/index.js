@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className="lg:text-6xl text-3xl font-bold">Patiphol Pussawong</h1>
           </div>
           <div className="lg:col-span-3 col-auto order-first justify-center self-center lg:order-none row-span-1 lg:row-span-2 lg:ml-12">
-            <img className={style.profileImg} src="/profile.jpg" />
+            <img className={style.profileImg} src={require('./../public/profile.jpg')} />
           </div>
           <div className="lg:col-start-2 lg:col-span-2 col-auto flex self-start justify-center lg:justify-end">
             <p>4th year Software Engineering student in ICT Faculty, Mahidol University. I'm keen to learn all about web development including both frontend and backend.</p>
