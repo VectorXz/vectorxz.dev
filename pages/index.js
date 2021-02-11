@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="container mx-auto">
+      <footer className="container mx-auto pb-2">
         <div className="grid text-xs">
           <div className="flex justify-center">
             <p>This web is part of my Learning at React with Next.JS and Tailwind CSS</p>
