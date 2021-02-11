@@ -6,3 +6,20 @@
 .footerLink {
     @apply text-blue-400;
 }
+
+.btnLink {
+    @apply py-1 px-4 bg-blue-500 text-white font-heading rounded-lg text-2xl hover:bg-blue-600 focus:outline-none transition-colors;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    line-height: 3;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: #fff;
+}
