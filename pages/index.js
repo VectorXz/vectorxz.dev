@@ -66,7 +66,7 @@ export default function Home() {
             <p>This web is part of my Learning at React with Next.JS and Tailwind CSS</p>
           </div>
           <div className="flex justify-center mt-2">
-            <p>Made with ❤️ by <a className={style.footerLink} href="https://github.com/VectorXz">@VectorXz</a></p>
+            <p>Made with ❤️ by <a className={style.footerLink} href="https://github.com/VectorXz">@VectorXz</a> | <a href="https://github.com/VectorXz/vectorxz.dev">Source on GitHub</a></p>
           </div>
         </div>
       </footer>
