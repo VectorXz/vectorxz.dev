@@ -23,3 +23,7 @@
     text-decoration: none;
     color: #fff;
 }
+
+.platformLink {
+    @apply py-1 px-4 mx-2 bg-purple-600 rounded-lg text-xl hover:bg-purple-800 focus:outline-none transition-colors;
+}
