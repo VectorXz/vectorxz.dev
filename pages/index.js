@@ -1,12 +1,24 @@
 import Head from 'next/head'
 import style from '../styles/index.module.css'
 
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>Patiphol Pussawong | VectorXz.dev</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R669P12MJR"></script>
+        <script
+              async
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag("js", new Date());
+
+                gtag("config", "G-R669P12MJR");`
+              }}
+        />
       </Head>
 
       <main className="container m-auto">
